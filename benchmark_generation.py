@@ -73,7 +73,7 @@ async def benchmark_parallel_clients(decoder, n_clients: int, prime_str: str, n_
     return elapsed, outputs
 
 async def main():
-    MODEL_PATH = "choto.pt"
+    MODEL_PATH = "weights.pt"
     CUDA = False
 
     decoder = load_model(MODEL_PATH, cuda=CUDA)
